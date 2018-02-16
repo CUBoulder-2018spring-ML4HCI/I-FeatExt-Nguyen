@@ -1,5 +1,5 @@
 # Machine Learning Assignment 5
-###Feature Extractor
+### Feature Extractor
 
 Dan Nguyen
 
@@ -19,7 +19,7 @@ I found that creating features for left and right tilt were very easy. A little 
 
 When trying to classify upward swing, in my previous attempts, I was trying to collect data very quickly while swinging the device up after hitting record, and then stopping recording data when the swing was complete. Due to my lack of superhuman talent my data for up swings were bad and looked like they didnt work.
 
-####ML Decisions
+#### ML Decisions
 
 Thats where WekiInputHelper came into play. After watching the videos, I was excited to know that the tool made it easy to only send signal when a certain threshold was met. Instead of using Z coordinates, I used *second order difference* on the Z value which allowed me to fine tune my training data for upswings based on acceleration. 
 
